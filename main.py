@@ -1,5 +1,6 @@
 from expenses import add_expense, view_expense
 from storage import load_data, save_data
+from analytics import show_total, show_category_total, show_graph
 
 
 def main():
@@ -12,6 +13,7 @@ def main():
         print("4. Category Summary")
         print("5. Show Graph")
         print("6. Exit")
+        print("7. Reset All Expenses")
         choice = input("Enter Choice: ")
 
         if choice == "6":
@@ -22,6 +24,16 @@ def main():
             add_expense(expenses)
         elif choice == "2":
             view_expense(expenses)
+        elif choice == "3":
+            show_total(expenses)
+        elif choice == "4":
+            show_category_total(expenses)
+        elif choice == "5":
+            show_graph(expenses)
+        elif choice == "7":
+            expenses = []
+            save_data(expenses)
+            print("All expenses cleared!")
 
 
 main()
