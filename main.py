@@ -13,7 +13,6 @@ def main():
         print("5. Show Graph")
         print("6. Exit")
         choice = input("Enter Choice: ")
-        print(type(choice), repr(choice))
 
         if choice == "6":
             save_data(expenses)
