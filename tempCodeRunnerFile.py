@@ -13,13 +13,14 @@ def main():
         print("5. Show Graph")
         print("6. Exit")
         choice = input("Enter Choice: ")
-        print(type(choice), repr(choice))
+        print(repr(choice))
 
         if choice == "6":
             save_data(expenses)
             break
 
         if choice == "1":
+            print("calling")
             add_expense(expenses)
         elif choice == "2":
             view_expense(expenses)
