@@ -22,18 +22,26 @@ def main():
 
         if choice == "1":
             add_expense(expenses)
+            print()
         elif choice == "2":
+            print()
             view_expense(expenses)
+            print()
         elif choice == "3":
+            print()
             show_total(expenses)
+            print()
         elif choice == "4":
+            print()
             show_category_total(expenses)
+            print()
         elif choice == "5":
             show_graph(expenses)
+            print()
         elif choice == "7":
-            expenses = []
-            save_data(expenses)
-            print("All expenses cleared!")
+             expenses = []
+    save_data(expenses)
+    print("All expenses cleared!")
 
 
 main()
