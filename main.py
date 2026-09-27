@@ -22,6 +22,7 @@ def main():
 
         if choice == "1":
             add_expense(expenses)
+            save_data(expenses)
             print()
         elif choice == "2":
             print()
@@ -39,9 +40,9 @@ def main():
             show_graph(expenses)
             print()
         elif choice == "7":
-             expenses = []
-    save_data(expenses)
-    print("All expenses cleared!")
+            expenses = []
+            save_data(expenses)
+            print("All expenses cleared!")
 
 
 main()
